@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .text {
+        position: absolute;
+        top: 30vh;
+        left: 35vw;
+        text-transform: uppercase;
+        font-size: 36px;
+        color: royalblue;
+      }
+      .timer {
+        display: flex;
+        width: 50vw;
+        height: 90vh;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .field {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 20%;
+        height: 20%;
+        font-size: 36px;
+      }
+      .value {
+        width: 100px;
+        margin-right: 10px;
+        text-align: center;
+        color: tomato;
+      }
+    </style>
+    <div class="text">До нового року залишилося:</div>
+    <div class="timer" id="timer-1">
+      <div class="field">
+        <span class="value" data-value="days">11</span>
+        <span class="label">Days</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="hours">11</span>
+        <span class="label">Hours</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="mins">11</span>
+        <span class="label">Minutes</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="secs">11</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
